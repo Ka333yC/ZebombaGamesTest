@@ -39,6 +39,7 @@ namespace DefaultNamespace
 
 		private void Awake()
 		{
+			Application.targetFrameRate = 60;
 			_pendulum.CreateBall();
 			_columnsManager.OnBallMovementStopped += BallMovementStopped;
 			_columnsManager.OnBallMovementStopped += CheckIsGameOver;
